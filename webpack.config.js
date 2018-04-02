@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var BundleTracker = require('webpack-bundle-tracker');
 
 module.exports = {
     context: __dirname,
@@ -8,6 +9,10 @@ module.exports = {
         path: path.resolve('./assets/bundles/'),
         filename: 'app.js'
     },
+
+    plugins: [
+        new BundleTracker({filename: './webpack-stats.json'}),
+    ],
 
     module: {
         loaders: [
