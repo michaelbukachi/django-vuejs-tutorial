@@ -2,3 +2,6 @@
 /db.sqlite3
 /node_modules/
 /venv
+bin/
+.vscode/
+webpack-stats.json

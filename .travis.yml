@@ -1,0 +1,25 @@
+sudo: required
+dist: trusty
+language: python
+python:
+  - "3.6"
+env:
+  - CI_TEST = true
+  - MOZ_HEADLESS = 1
+addons:
+  firefox: latest
+
+before_install:
+  - curl -sL https://deb.nodesource.com/setup | sudo bash -
+  - sudo apt-get install nodejs
+  - sudo ln -s /usr/bin/nodejs /usr/bin/node
+install:
+  - pip install -r requirements.txt
+  - npm install
+before_script:
+  - ./node_modules/.bin/webpack
+  - sleep 3
+  - python manage.py runserver &
+  - sleep 3
+script:
+- pytest test/
