@@ -19,9 +19,7 @@ def path():
 @pytest.fixture(scope='session')
 def driver(path):
     if os.getenv('CI_TEST', None):
-        options = Options()
-        options.add_argument('--headless')
-        driver_ = webdriver.Firefox(firefox_options=options)
+        driver_ = webdriver.PhantomJS()
     else:
         driver_ = webdriver.PhantomJS(path)
     yield driver_
