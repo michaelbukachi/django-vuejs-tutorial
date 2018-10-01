@@ -1,6 +1,8 @@
 # django-vuejs-tutorial
 A tutorial to integrate Vue.js with django
 
+[![Build Status](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial.svg?branch=master)](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial)
+
 ## Installation
 1. Clone the repo
 2. Run `pip install -r requirements.txt`

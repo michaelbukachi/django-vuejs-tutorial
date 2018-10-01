@@ -4,9 +4,7 @@ language: python
 python:
   - "3.6"
 env:
-  - CI_TEST=true MOZ_HEADLESS=1
-addons:
-  firefox: latest
+  - CI_TEST=true
 
 before_install:
   - curl -sL https://deb.nodesource.com/setup_8.x | sudo bash -
