@@ -1,7 +1,7 @@
+[![Build Status](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial.svg?branch=master)](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial)
+
 # django-vuejs-tutorial
 A tutorial to integrate Vue.js with django
-
-[![Build Status](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial.svg?branch=master)](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial)
 
 ## Installation
 1. Clone the repo
