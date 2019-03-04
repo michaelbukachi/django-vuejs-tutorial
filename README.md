@@ -9,7 +9,6 @@ A tutorial to integrate Vue.js with django
 3. Run `npm install`
 4. Run `./node_modules/.bin/webpack`
 3. Run `python manage.py runserver`
-4. Once the server has started, run `pytest test`
 
 For a detailed tutorial, checkout this [wiki](https://github.com/michaelbukachi/django-vuejs-tutorial/wiki/Django-Vue.js-Integration-Tutorial).
 
