@@ -9,9 +9,12 @@
 
 window.$ = window.jQuery = require('jquery');
 require('bootstrap-sass');
-import Vue from "vue";
 
+import Vue from "vue";
 import Demo from "./components/Demo.vue";
+
+// Add Vue to the browser's window object
+window.Vue = Vue;
 
 const app = new Vue({
     el: '#app',
