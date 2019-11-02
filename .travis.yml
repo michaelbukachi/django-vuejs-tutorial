@@ -1,5 +1,5 @@
 sudo: required
-dist: trusty
+dist: xenial
 language: python
 python:
   - "3.6"
@@ -18,4 +18,4 @@ before_script:
   - python manage.py runserver &
   - ./wait-for-it.sh -h localhost -p 8000 -t 10
 script:
-- pytest test/
+  - pytest test/
