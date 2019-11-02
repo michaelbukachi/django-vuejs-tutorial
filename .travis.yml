@@ -14,8 +14,8 @@ install:
   - npm install
 before_script:
   - ./node_modules/.bin/webpack
-  - sleep 3
   - python manage.py runserver &
-  - sleep 3
+  - chmod +x wait-for-it.sh
+  - ./wait-for-it.sh -h localhost -p 8000 -t 10
 script:
 - pytest test/
