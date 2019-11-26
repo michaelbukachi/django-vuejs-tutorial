@@ -3,6 +3,8 @@
 # django-vuejs-tutorial
 A tutorial to integrate Vue.js with django
 
+This tutorial integrates Vue.js and django into one application, with Vue.js handling frontend logic and django managing backend reponses.
+
 ## Installation
 1. Clone the repo
 2. Run `pip install -r requirements.txt`
