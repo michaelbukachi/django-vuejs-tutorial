@@ -1,8 +1,6 @@
 [![Build Status](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial.svg?branch=master)](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial)
 
 # django-vuejs-tutorial
-A tutorial to integrate Vue.js with django
-
 This tutorial integrates Vue.js and django into one application, with Vue.js handling frontend logic and django managing backend reponses.
 
 ## Installation
