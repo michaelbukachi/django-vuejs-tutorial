@@ -16,7 +16,7 @@ For a detailed tutorial, checkout this [wiki](https://github.com/michaelbukachi/
 Sometimes you might not need a whole frontend application. Maybe you just Vue.js to improve functionality on your existing app
 To checkout the no webpack example
 ### Steps:
-1. Clone the repo with `git clone --single-branch --branch no_webpack https://github.com/michaelbukachi/django-vuejs-tutorial.git` (You can also clone the repo normal and checkout the **no_webpack** branch)
+1. Clone the repo with `git clone --single-branch --branch no_webpack https://github.com/michaelbukachi/django-vuejs-tutorial.git` (You can also clone the repo normal way and checkout the **no_webpack** branch)
 2. Run `pip install -r requirements.txt`
 3. Run `python manage.py runserver`
 
