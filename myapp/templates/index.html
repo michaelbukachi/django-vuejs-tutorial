@@ -1,13 +1,15 @@
-{% load render_bundle from webpack_loader %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>My Django Vue</title>
 </head>
 <body>
+{% include './demo.html' %}
 <div id="app">
     <demo></demo>
 </div>
-{% render_bundle 'main' %}
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script type="text/javascript" src="{% static "demo.js" %}"></script>
 </body>
 </html>

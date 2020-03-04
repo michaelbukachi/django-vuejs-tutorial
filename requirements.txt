@@ -1,4 +1,3 @@
 django
-django-webpack-loader
 pytest
 selenium
