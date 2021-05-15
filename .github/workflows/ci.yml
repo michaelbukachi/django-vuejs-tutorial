@@ -21,7 +21,7 @@ jobs:
         uses: nanasess/setup-chromedriver@master
       - name: Export chromdrive path
         run: |
-          locate chromedriver
+          export CHROME_DRIVER_PATH=/usr/local/bin/chromedriver
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
