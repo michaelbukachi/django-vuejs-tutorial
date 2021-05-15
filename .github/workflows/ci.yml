@@ -19,6 +19,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Set up chrome driver
         uses: nanasess/setup-chromedriver@master
+      - name: Export chromdrive path
         run: |
           locate chromedriver
       - name: Install dependencies
