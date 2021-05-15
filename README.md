@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial.svg?branch=master)](https://travis-ci.com/michaelbukachi/django-vuejs-tutorial)
+![ci status](https://github.com/michaelbukachi/django-vuejs-tutorial/actions/workflows/ci.yml/badge.svg)
 
 # django-vuejs-tutorial
 This tutorial integrates Vue.js and django into one application, with Vue.js handling frontend logic and django managing backend reponses.
