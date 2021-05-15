@@ -16,9 +16,6 @@ jobs:
           python-version: 3.8
       - name: Set up chrome driver
         uses: nanasess/setup-chromedriver@master
-      - name: Export chromdrive path
-        run: |
-          export CHROME_DRIVER_PATH=/usr/local/bin/chromedriver
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -31,6 +28,7 @@ jobs:
           ./node_modules/.bin/webpack
       - name: Test with pytest
         run: |
+          export CHROME_DRIVER_PATH=/usr/local/bin/chromedriver
           nohup python manage.py runserver &
           chmod +x wait-for-it.sh
           ./wait-for-it.sh -h localhost -p 8000 -t 10
