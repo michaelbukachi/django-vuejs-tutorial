@@ -19,6 +19,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Set up chrome driver
         uses: nanasess/setup-chromedriver@master
+        run: |
+          locate chromedriver
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -31,6 +33,7 @@ jobs:
           ./node_modules/.bin/webpack
       - name: Test with pytest
         run: |
+          python manage.py runserver
           chmod +x wait-for-it.sh
           ./wait-for-it.sh -h localhost -p 8000 -t 10
           pytest
