@@ -1,22 +1,19 @@
 name: Python package
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
       CI_TEST: true
-    strategy:
-      matrix:
-        python-version: [3.8]
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: Set up Python 3.8
         uses: actions/setup-python@v2
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: 3.8
       - name: Set up chrome driver
         uses: nanasess/setup-chromedriver@master
       - name: Export chromdrive path
@@ -34,7 +31,7 @@ jobs:
           ./node_modules/.bin/webpack
       - name: Test with pytest
         run: |
-          python manage.py runserver
+          nohup python manage.py runserver &
           chmod +x wait-for-it.sh
           ./wait-for-it.sh -h localhost -p 8000 -t 10
           pytest
