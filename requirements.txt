@@ -1,4 +1,4 @@
-django
-django-webpack-loader
+django==3.2.3
+django-webpack-loader==1.0.0
 pytest
 selenium
