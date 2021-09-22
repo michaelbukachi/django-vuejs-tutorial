@@ -1,4 +1,4 @@
-django==3.2.3
+django==3.2.5
 django-webpack-loader==1.0.0
 pytest
 selenium
