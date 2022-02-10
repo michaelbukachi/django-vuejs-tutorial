@@ -27,7 +27,7 @@
     "css-loader": "^2.1.1",
     "jquery": "^3.6.0",
     "lodash": "^4.17.21",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.13.0",
     "vue": "^2.6.8",
